@@ -3,6 +3,9 @@
   become: true
 
   tasks:
-  - name: Install nmap
+  - name: Install packages
     apt:
-      name: nmap
+      name:
+        - nmap
+        - mc
+        - tmux
